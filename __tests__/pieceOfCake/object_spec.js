@@ -17,7 +17,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = {};
+    const expected = undefined;
     // --end->
 
     expect(person.whatTheHellIsThat).toEqual(expected);
@@ -28,7 +28,7 @@ describe('for object', () => {
 
     // <--start
     // Please write a line of code to remove the `name` property.
-
+    person.name = undefined;
     // --end->
 
     expect(person.name).toBeUndefined();
@@ -41,7 +41,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = ['name', 'yearOfBirth'];
     // --end->
 
     expect(Object.keys(person)).toEqual(expected);
@@ -58,7 +58,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = `Hello, I am John`;
     // --end->
 
     expect(person.greeting()).toEqual(expected);
@@ -70,7 +70,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'Bob';
     // --end->
 
     expect(name).toEqual(expected);
@@ -82,7 +82,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = '{"name":"Bob","yearOfBirth":2019}';
     // --end->
 
     expect(json).toEqual(expected);
@@ -94,7 +94,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = { color: 'Red', value: '#ff0000' };
     // --end->
 
     expect(color).toEqual(expected);
@@ -108,7 +108,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'The white rabbit says Hello.';
     // --end->
 
     expect(rabbit.speak('Hello')).toEqual(expected);
@@ -124,7 +124,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'The white rabbit says Hello.';
     // --end->
 
     expect(rabbit.speak('Hello')).toEqual(expected);
@@ -139,7 +139,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = [0, 2, 3];
     // --end->
 
     expect(actual).toEqual(expected);
